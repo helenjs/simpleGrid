@@ -1,0 +1,21 @@
+.imageGrid {
+    width: calc(100% / 3);
+    height: 200px;
+    padding: 0 10px 20px;
+    display: flex;
+}
+.gridItem {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.active {
+    border: 2px solid #19BC9B;
+}
+
+@media(max-width: 1024px) {
+    .imageGrid {
+        width: calc(100% / 2);
+    }
+}

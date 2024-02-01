@@ -7,6 +7,7 @@ import { CircularProgress } from "@material-ui/core";
 import { Block } from './gridInterface';
 import { data } from './__mock__/grid.mocks.data';
 import { Header } from './components/Header/Header';
+import { ImageGrid } from './components/ImageGrid/ImageGrid';
 
 export const App = () => {
   const { id } = useParams() as { id: string };
@@ -74,6 +75,9 @@ export const App = () => {
       <Header />
       <main className={styles.main} data-testid="main">
         <div className={styles.wrapper}>
+          { !!imageData.length &&
+            <ImageGrid data={imageData} />
+          }
           { !imageData.length && !isLoading &&
               <div>No data</div>
           }
