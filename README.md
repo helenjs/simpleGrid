@@ -1,3 +1,8 @@
+## This test example of project with gallery and aside info to demonstrate:
+- React rendering, simple selection functionality, propsing data, routes
+- Typescript,
+- Jest unit tests
+
 ## Running the application
 
 ```
